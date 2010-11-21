@@ -13,8 +13,9 @@
 # $Id$
 #++
 
+require 'diff/lcs/version'
+
 module Diff
-    # = Diff::LCS 1.1.2
     # Computes "intelligent" differences between two sequenced Enumerables.
     # This is an implementation of the McIlroy-Hunt "diff" algorithm for
     # Enumerable objects that include Diffable.
@@ -144,7 +145,6 @@ module Diff
     # Common Subsequences</em>, CACM, vol.20, no.5, pp.350-353, May 1977, with
     # a few minor improvements to improve the speed."
   module LCS
-    VERSION = '1.1.2'
   end
 end
 
