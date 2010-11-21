@@ -1,4 +1,3 @@
-#! /usr/env/bin ruby
 # Copyright (c) 2004 Austin Ziegler
 # Copyright (c) 2010 Gioele Barabucci
 #
