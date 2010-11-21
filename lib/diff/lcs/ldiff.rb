@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
+# Copyright (c) 2004 Austin Ziegler
+#
+# This program is free software. It may be redistributed and/or modified under
+# the terms of the GPL version 2 (or later), the Perl Artistic licence, or the
+# Ruby licence.
 
 require 'optparse'
 require 'ostruct'
@@ -22,7 +27,7 @@ require 'diff/lcs/hunk'
   # By default, runs produces an "old-style" diff, with output like UNIX diff.
   #
   # == Copyright
-  # Copyright &copy; 2004 Austin Ziegler
+  # Copyright (c) 2004 Austin Ziegler
   #
   #   Part of Diff::LCS <http://rubyforge.org/projects/ruwiki/>
   #   Austin Ziegler <diff-lcs@halostatue.ca>
