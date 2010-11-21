@@ -65,7 +65,7 @@ class Diff::LCS::Hunk
 
     # Change the "start" and "end" fields to note that context should be added
     # to this hunk
-  attr_accessor :flag_context
+  attr_reader :flag_context
   def flag_context=(context) #:nodoc:
     return if context.nil? or context.zero?
 
