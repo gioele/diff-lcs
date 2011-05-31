@@ -255,7 +255,7 @@ module Diff::LCS
       if block_given?
         res = callbacks.diffs.map do |hunk|
           if hunk.kind_of?(Array)
-            hunk = hunk.map { |block| yield block }
+            hunk = hunk.map { |hunk_block| yield hunk_block }
           else
             yield hunk
           end
@@ -292,7 +292,7 @@ module Diff::LCS
       if block_given?
         res = callbacks.diffs.map do |hunk|
           if hunk.kind_of?(Array)
-            hunk = hunk.map { |block| yield block }
+            hunk = hunk.map { |hunk_block| yield hunk_block }
           else
             yield hunk
           end
