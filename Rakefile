@@ -15,13 +15,6 @@ task 'gem:release' => 'test:run'
 
 require 'lib/diff/lcs/version.rb'
 
-def _paragraphs_of(path, n)
-	# FIXME: teach `Bones::summary` to fall back to the very first paragraph
-	File.read(path).delete("\r").
-	     split(/\n\n+/)[n].
-	     map { |para| para.gsub("\n", ' ') }
-end
-
 Bones {
 	name     'diff-lcs'
 	authors  ['Austin Ziegler']
@@ -33,8 +26,5 @@ Bones {
 	readme_file  'README.md'
 	history_file 'ChangeLog'
 	ignore_file  '.gitignore'
-
-	summary      _paragraphs_of(readme_file, 1..1).join("\n")
-	description  _paragraphs_of(readme_file, 3..3).join("\n")
 }
 
